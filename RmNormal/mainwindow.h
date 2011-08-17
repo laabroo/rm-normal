@@ -2,9 +2,11 @@
 #define MAINWINDOW_H
 
 #include <QtGui/QMainWindow>
+#include <QPushButton>
+
 
 namespace Ui {
-    class MainWindow;
+class MainWindow;
 }
 
 class MainWindow : public QMainWindow
@@ -27,6 +29,13 @@ public:
 
 private:
     Ui::MainWindow *ui;
+
+private :
+
+    QPushButton *btnShoot;
+    QPushButton *btnSettings;
+    QPushButton *btnRegister;
+    QPushButton *btnInbox;
 };
 
 #endif // MAINWINDOW_H
